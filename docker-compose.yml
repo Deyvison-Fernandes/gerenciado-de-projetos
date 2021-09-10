@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  gerenciadorprojetos-web:
+    container_name: gerenciadorprojetos_web
+    image: gerenciadorprojetos-web
+    restart: always
+    build: ./web
+    ports: 
+      - "3000:3000"
+  gerenciadorprojetos-api:
+    container_name: gerenciadorprojetos_api
+    image: gerenciadorprojetos-api
+    restart: always
+    build: ./backend
+    ports: 
+      - "5000:5000"
+    links: 
+      - mongo
+  mongo:
+    container_name: mongodb
+    image: mongo
+    ports: 
+      - "27017:27017"
