@@ -1,0 +1,55 @@
+.layout-base {
+  height: 100vh;
+}
+
+.layout-content{
+  overflow: auto;
+}
+
+.ant-layout-header {
+  padding: 0;
+}
+
+.header h2{
+  padding: 12px 40px;
+  color: #fff;
+}
+
+.sider-menu .ant-layout-sider-zero-width-trigger {
+  margin-top: -50px;
+}
+
+.logo {
+  margin: 16px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.logo span:nth-child(1){
+  color: #bdaf00b8;
+}
+
+.logo span:nth-child(2){
+  color: #58d658b8;
+}
+.logo span:nth-child(3){
+  color: #009fea;
+}
+
+.content-main {
+  min-height: calc(100vh - 160px);
+}
+
+.space-button-grid {
+  margin-bottom: 20px;
+}
+
+.icon-grid {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.page-header-title {
+  padding: 0px 0 30px 0px;
+}
+
